@@ -1,3 +1,12 @@
 all:
-  vars:
-    ...
+  children:
+    prod:
+      vars:
+        hostname: "Production"
+      hosts:
+        169.254.1.1
+    test:
+      vars:
+        hostname: "Test"
+      hosts:
+        169.254.1.2
