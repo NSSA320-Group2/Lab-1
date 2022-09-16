@@ -1,1 +1,19 @@
 ---
+- name: Add EPEL repository
+  yum:
+    name: epel-release
+    state: present
+
+- name: Install nginx
+  yum:
+    name: nginx
+    state: present
+
+- name: Start & enable nginx
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: Allow http through firewall
+  shell: firewall-cmd --permanent --service=http

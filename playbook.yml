@@ -1,1 +1,6 @@
 ---
+- hosts: test
+  roles:
+    - nginx_install
+    - nginx_configure
+    - expolore_california

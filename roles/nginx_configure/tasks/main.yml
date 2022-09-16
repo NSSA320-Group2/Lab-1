@@ -1,1 +1,11 @@
 ---
+- name: Copy nginx Config
+  copy:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.con
+    mode: 0644
+
+-name: Restart nginx
+  service:
+    name: nginx
+    state: restarted
