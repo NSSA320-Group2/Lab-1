@@ -16,4 +16,7 @@
     enabled: yes
 
 - name: Allow http through firewall
-  shell: firewall-cmd --permanent --service=http
+  shell: firewall-cmd --permanent --zone=public --add-service=http
+
+- name: Reload firewalld
+  shell: firewall-cmd --reload
