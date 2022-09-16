@@ -3,4 +3,4 @@
   roles:
     - nginx_install
     - nginx_configure
-    - expolore_california
+    - explore_california

@@ -5,7 +5,7 @@
     dest: /etc/nginx/nginx.con
     mode: 0644
 
--name: Restart nginx
+- name: Restart nginx
   service:
     name: nginx
     state: restarted
