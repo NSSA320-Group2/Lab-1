@@ -1,4 +1,6 @@
 ---
+# 9/15 - nginx_configure/tasts/main.yml
+# Create role - Shane Mongan & Matt Russell
 - name: Copy nginx Config
   copy:
     src: nginx.conf

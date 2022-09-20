@@ -1,4 +1,6 @@
 ---
+# 9/15 - explore_california/tasts/main.yml
+# Create role - Shane Mongan
 - name: Remove existing web files
   file:
     path: /usr/share/nginx/html
