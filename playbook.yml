@@ -1,1 +1,8 @@
 ---
+# 9/15 - playbook.yml
+# Assign roles to host test – Shane Mongan
+- hosts: test
+  roles:
+    - nginx_install
+    - nginx_configure
+    - explore_california

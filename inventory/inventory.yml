@@ -9,4 +9,4 @@ all:
       vars:
         hostname: "Test"
       hosts:
-        169.254.1.2
+        lab1client

@@ -1,0 +1,20 @@
+---
+# 9/15 - explore_california/tasts/main.yml
+# Create role - Shane Mongan
+- name: Remove existing web files
+  file:
+    path: /usr/share/nginx/html
+    state: absent
+    
+- name: Copy files to client
+  copy:
+    src: explore_california/
+    dest: /usr/share/nginx/html/
+
+- name: Change file permissions
+  file:
+    path: /usr/share/nginx/html/
+    recurse: yes
+    owner: nginx
+    group: nginx
+    mode: u=rwX,g=rX,o=rX
